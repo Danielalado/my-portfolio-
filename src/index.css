@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Lexend Deca", sans-serif;
+    /* font-family: "Oxygen" sans-serif; */
+    transition: all 0.2s linear;
+}
+
+body{
+    min-height: 100vh;
+    background: #110f1d;
+}
+
+a{
+    text-decoration: none;
+    /* color: inherit; */
+}
+
+/* .app{
+    width: 80%;
+    margin: auto;
+} */
+
+/* .navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+  background: #41405366;
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 5rem;
+  width: 85%;
+  border: 1px solid rgb(80, 79, 79);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+} */
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
+
+
+
+ 
+
