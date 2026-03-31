@@ -1,0 +1,265 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 7rem;
+}
+
+.header-top{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem auto;
+    padding: 0.5rem 0.7rem;
+    color: #8c96a1;
+    border-radius: 1rem;
+    font-size: 0.6rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    background-color: #18181f;
+}
+
+.slash{
+    color: #0d98e9;
+}
+
+.header-top-h1{
+   font-size: 5rem;
+   color: white;
+   line-height: 1.1;
+}
+
+.header-top-h1-bottom{
+    margin-top: -1.2rem;
+    margin-bottom: 2rem;
+    font-size:5rem;
+    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description{
+    color: #8c96a1;
+    margin: 0 auto 2rem auto;
+    width: 50%;
+    line-height: 1.6;
+}
+
+.my-works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.project{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0.8rem 1.3rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(to right, #0d98e9,#00e1ff);
+    transition: 0.3s ease;
+}
+
+.project img{
+    width: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.project:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(53, 135, 202, 0.9);
+    transform: scale(1.05);
+}
+
+.project:hover img{
+    transform: translateX(0.3rem);
+}
+
+.portfolio{
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.7rem;
+    color: #8c96a1;
+    border: 0.1rem solid rgb(80, 79, 79);
+    transition: 0.3s ease;
+    justify-content: center;
+}
+
+.portfolio:hover{
+    cursor: pointer;
+    background-color: #252627;
+}
+
+.header-bottom-line{
+    width: 0.125rem;
+    height: 2.5rem;
+    margin: 1rem auto;
+    background: linear-gradient(to bottom, #4fd1ff, transparent);
+}
+
+
+
+/* ===================== DESKTOPS (1281px and above) ===================== */
+@media (min-width: 1281px) {
+
+  .header-h1,
+  .header-h1-bottom{
+    font-size: 7rem;
+  }
+
+  .description{
+    width: 50%;
+    font-size: 1rem;
+  }
+
+}
+
+
+/* ===================== LAPTOPS (1025px - 1280px) ===================== */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .header-h1,
+  .header-h1-bottom{
+    font-size: 6rem;
+  }
+
+  .description{
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  #header{
+    margin-top: 6rem;
+  }
+
+}
+
+
+/* ===================== TABLETS PORTRAIT (768px - 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #header{
+    padding: 3rem 2rem;
+    margin-top: 5rem;
+  }
+
+  .header-h1,
+  .header-h1-bottom{
+    font-size: 4.5rem;
+  }
+
+  .header-h1-bottom{
+    margin-top: -1rem;
+  }
+
+  .description{
+    width: 80%;
+    font-size: 0.95rem;
+  }
+
+  .project,
+  .portfolio{
+    font-size: 0.9rem;
+  }
+
+}
+
+
+/* ===================== TABLETS LANDSCAPE (768px - 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .header-h1,
+  .header-h1-bottom{
+    font-size: 4rem;
+  }
+
+  .description{
+    width: 75%;
+  }
+
+}
+
+
+/* ===================== MOBILE LANDSCAPE (481px - 767px) ===================== */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  #header{
+    padding: 2.5rem 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .header-h1,
+  .header-h1-bottom{
+    font-size: 3rem;
+  }
+
+  .header-h1-bottom{
+    margin-top: -0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .description{
+    width: 95%;
+    font-size: 0.9rem;
+  }
+
+  .header-top{
+    font-size: 0.65rem;
+  }
+
+  .project,
+  .portfolio{
+    font-size: 0.85rem;
+    padding: 0.7rem 1.1rem;
+  }
+
+}
+
+
+/* ===================== MOBILE PORTRAIT (320px - 480px) ===================== */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #header{
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .header-top-h1,
+  .header-top-h1-bottom{
+    font-size: 2.2rem;
+  }
+
+  .header-top-h1-bottom{
+    margin-top: -0.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .description{
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  /* .header-top{
+    font-size: 0.6rem;
+  } */
+
+  .project,
+  .portfolio{
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.7rem;
+  }
+
+  .my-works{
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+}
