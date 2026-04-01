@@ -1,0 +1,120 @@
+.TechTools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: -3rem;
+}
+
+.TechTools-top-h1{
+    font-size: 4rem;
+    color: white;
+    line-height: 1.1;
+}
+
+.TechTools-top-bottom{
+    margin-top: -0.3rem;
+    font-size: 3.5rem;
+    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.TechTools-bottom-description{
+    color: #8c96a1;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+
+
+/* Smartphones (320px – 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+
+.TechTools{
+    padding: 1.5rem;
+}
+
+.TechTools-top-h1{
+    font-size: 2rem;
+}
+
+.TechTools-top-bottom{
+    font-size: 2rem;
+}
+
+.TechTools-bottom-description{
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+}
+
+
+/* Low Resolution Tablets / Large Phones (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+.TechTools-top-h1{
+    font-size: 2.5rem;
+}
+
+.TechTools-top-bottom{
+    font-size: 2.5rem;
+}
+
+.TechTools-bottom-description{
+    width: 90%;
+}
+
+}
+
+
+/* Tablets Portrait (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.TechTools-top-h1{
+    font-size: 3rem;
+}
+
+.TechTools-top-bottom{
+    font-size: 3rem;
+}
+
+.TechTools-bottom-description{
+    width: 70%;
+}
+
+}
+
+
+/* Tablets Landscape (768px – 1024px landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+.TechTools-bottom-description{
+    width: 60%;
+}
+
+}
+
+
+/* Laptops / Desktops (1025px – 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+.TechTools-bottom-description{
+    width: 55%;
+}
+
+}
+
+
+/* Large Desktops (1281px and above) */
+@media (min-width: 1281px) {
+
+.TechTools-bottom-description{
+    width: 50%;
+}
+
+}

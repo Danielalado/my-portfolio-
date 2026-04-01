@@ -1,0 +1,410 @@
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.project-top{
+    color: white;
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.project-bottom{
+    margin-top: -0.5rem;
+    font-size: 3.5rem;
+    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-description{
+    color: #8c96a1;
+    margin-top: 1rem;
+    width: 60%;
+}
+
+.project-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    width: 80%;
+    height: 50%;
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    /* background-color: #1a1919; */
+}
+
+.project-cards:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 30px 0.5px rgba(8, 51, 194, 0.4);
+    border-color: #0d98e9;
+}
+
+.project-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-left img{
+    height: 28rem;;
+    width: 40rem;
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+    padding: 0.15rem 0.5rem;
+    transition: 0.3s ease;
+    object-fit: fill;
+}
+
+.project-cards:hover img{
+    transition: 0.3s;
+    transform: scale(1.02);
+    transform: translateXY(0.1px);
+    overflow: hidden
+}
+
+
+.project-right{
+    justify-content: center;
+    text-align: start;
+    width: 50%;
+    /* height: 20rem; */
+    padding: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.project-right-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #8c96a1;
+}
+
+.project-right-top .date{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    border-radius: 0.5rem;
+    background-color: rgb(22, 22, 31);
+
+}
+
+.project-right-top .date img{
+    height: 1.3rem;
+}
+
+.project-right-top .date p{
+    font-size: 0.9rem;
+}
+
+.project-right-top .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    border-radius: 10rem;
+    background-color: rgb(22, 22, 31);
+}
+
+.project-cards:hover .number{
+    color: #0d98e9;
+    border-color: #0d98e9;
+}
+
+
+.project-name{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-cards:hover .project-name{
+    background: linear-gradient(to right, #38a8e9,#99eaf5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-name-description{
+    color: #d4d6d8;
+    margin-bottom: 1.5rem;
+}
+
+.project-name-about{
+    color: #8c96a1;
+    margin-bottom: 1.5rem;
+}
+
+.project-hr{
+    margin-bottom: 1.5rem;
+    
+}
+
+.project-right-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-right-bottom .left-top{
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    border-radius: 0.5rem;
+    background-color: #16161f;
+    color: #8c96a1;
+    font-size: 0.9rem;
+}
+
+.project-right-bottom .left-bottom{
+    width: 7rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    border-radius: 0.5rem;
+    background-color: #16161f;
+    color: #8c96a1;
+    font-size: 0.9rem;
+}
+
+.project-right-bottom .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 7rem;
+    padding: 0.5rem 0.7rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    border-radius: 0.5rem;
+    background: linear-gradient(to right, #0d98e9,#00e1ff);
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.project-right-bottom .right a{
+    color: white;
+}
+
+.project-right-bottom .right img{
+    width: 0.7rem;
+}
+
+.project-cards:hover .right img{
+    transition: 0.3s;
+    transform: scale(1.02);
+    transform: translateX(0.2rem);
+}
+
+.view-project{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    border-radius: 0.5rem;
+    background: linear-gradient(to right, #0d98e9,#00e1ff);
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.view-project img{
+    width: 0.7rem;
+}
+
+.view-project:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.03);
+    transform: translateXY(0.2rem);
+}
+
+.view-project:hover img{
+    transition: 0.3s;
+    transform: scale(1.04);
+    transform: translateX(0.2rem);
+}
+
+
+
+
+/* Smartphones (320px – 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+
+.project-top{
+    font-size: 2rem;
+}
+
+.project-bottom{
+    font-size: 1.8rem;
+}
+
+.project-description{
+    width: 95%;
+    font-size: 0.9rem;
+}
+
+.project-cards{
+    flex-direction: column-reverse;
+    width: 95%;
+    margin-top: 3rem;
+}
+
+.project-left img{
+    width: 100%;
+    height: 16rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.project-right{
+    width: 100%;
+    text-align: start;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+}
+
+.project-name{
+    font-size: 1.5rem;
+}
+
+.project-right-bottom{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+}
+
+
+/* Low Resolution Tablets / Large Phones (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+.project-top{
+    font-size: 2.5rem;
+}
+
+.project-bottom{
+    font-size: 2.2rem;
+}
+
+.project-description{
+    width: 85%;
+}
+
+.project-cards{
+    flex-direction: column;
+    width: 90%;
+}
+
+.project-left img{
+    width: 100%;
+    height: 18rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.project-right{
+    width: 100%;
+}
+
+.project-name{
+    font-size: 1.8rem;
+}
+
+}
+
+
+/* Tablets Portrait (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.project-description{
+    width: 75%;
+}
+
+.project-cards{
+    width: 90%;
+}
+
+.project-left img{
+    width: 30rem;
+    height: 22rem;
+}
+
+.project-right{
+    width: 55%;
+}
+
+.project-name{
+    font-size: 2rem;
+}
+
+}
+
+
+/* Tablets Landscape (768px – 1024px landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+.project-cards{
+    width: 85%;
+}
+
+.project-left img{
+    width: 32rem;
+    height: 23rem;
+}
+
+}
+
+
+/* Laptops / Desktops (1025px – 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+.project-description{
+    width: 65%;
+}
+
+.project-cards{
+    width: 85%;
+}
+
+.project-left img{
+    width: 35rem;
+    height: 25rem;
+}
+
+.project-right{
+    width: 55%;
+}
+
+}
+
+
+/* Large Desktops (1281px and above) */
+@media (min-width: 1281px) {
+
+.project-description{
+    width: 60%;
+}
+
+.project-cards{
+    width: 80%;
+}
+
+}

@@ -1,0 +1,283 @@
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+}
+
+.services-top{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    color: #8c96a1;
+    border-radius: 1rem;
+    font-size: 0.6rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    background-color: #18181f;
+}
+
+.services-top-slash{
+    color: #0d98e9;
+}
+
+.services-top-h1{
+    font-size: 4rem;
+    color: white;
+    line-height: 1.1;
+}
+
+.services-top-bottom{
+    margin-top: -0.3rem;
+    font-size: 3.5rem;
+    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-bottom-description{
+    color: #8c96a1;
+    margin-bottom: 2rem;
+}
+
+.services-cards{
+  display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     */
+   
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 20rem ;
+    height: 20rem;
+    background-color: #0b0d17;
+    color: white;
+    margin: 0.5rem;
+    margin-top: 3rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    transition: tranform 0.3s ease;
+}
+
+.card:hover{
+    transition: 0.3s;
+    box-shadow: 2px 2px 30px 0.5px rgba(8, 51, 194, 0.4);
+    background-color: rgb(22, 22, 31);
+}
+
+.card-image img{
+    position: relative;
+    background: linear-gradient(to bottom, #0d98e9,#00e1ff);
+    /* background: #2629ce; */
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    margin-bottom: 1.3rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-image{
+    transition: 0.3s;
+    transform: scale(1.1);
+    transform: translateXY(1px);
+}
+
+.card:hover img{
+    transition: 0.3s;
+    transform: scale(1.1);
+    transform: translateXY(20px);
+    transform: rotate(3deg); 
+}
+
+.card-title{
+    margin: 0.5rem;
+    color: white;
+}
+
+.card-description{
+    margin-top: 1rem;
+    color: #8c96a1;
+}
+
+.card-bottom-line{
+    width: 2rem;
+    height: 0.125rem;
+    margin: 1rem auto;
+    background: linear-gradient(to bottom, #4fd1ff, transparent);
+}
+
+.card:hover .card-bottom-line{
+    width: 5rem;
+}
+
+
+
+/* ===================== DESKTOPS (1281px and above) ===================== */
+@media (min-width: 1281px) {
+
+  .services-cards{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .card{
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .services-top-h1,
+  .services-top-bottom{
+    font-size: 4rem;
+  }
+
+}
+
+
+/* ===================== LAPTOPS (1025px - 1280px) ===================== */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .services-cards{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card{
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .services-top-h1,
+  .services-top-bottom{
+    font-size: 3.5rem;
+  }
+
+}
+
+
+/* ===================== TABLETS PORTRAIT (768px - 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #services{
+    padding: 3rem 2rem;
+  }
+
+  .services-cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
+  }
+
+  .services-top-h1,
+  .services-top-bottom{
+    font-size: 3rem;
+  }
+
+}
+
+
+/* ===================== TABLETS LANDSCAPE (768px - 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .services-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 16rem;
+    height: auto;
+  }
+
+  .services-top-h1,
+  .services-top-bottom{
+    font-size: 2.8rem;
+  }
+
+}
+
+
+/* ===================== MOBILE LANDSCAPE (481px - 767px) ===================== */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  #services{
+    padding: 3rem 1.5rem;
+    margin-top: 0;
+  }
+
+  .services-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  .card{
+    width: 100%;
+    height: auto;
+  }
+
+  .services-top-h1,
+  .services-top-bottom{
+    font-size: 2.2rem;
+  }
+
+  .services-top{
+    font-size: 0.7rem;
+  }
+
+}
+
+
+/* ===================== MOBILE PORTRAIT (320px - 480px) ===================== */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #services{
+    padding: 2rem 1rem;
+    margin-top: 0;
+  }
+
+  .services-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .services-top-h1,
+  .services-top-bottom{
+    font-size: 1.8rem;
+  }
+
+  .services-top{
+    font-size: 0.65rem;
+  }
+
+  .services-bottom-description{
+    font-size: 0.9rem;
+  }
+
+}

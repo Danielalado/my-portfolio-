@@ -1,9 +1,9 @@
 import About from "../../Components/About/About";
-// import Contact from "../../Components/Contact/Contact";
+import Contact from "../../Components/Contact/Contact";
 import Header from "../../Components/Header/Header"
-// import Project from "../../Components/Projects/Project";
-// import Services from "../../Components/Services/Services"
-// import TechTools from "../../Components/TechTools/TechTools"
+import Project from "../../Components/Projects/Project";
+import Services from "../../Components/Services/Services"
+import TechTools from "../../Components/TechTools/TechTools"
 
 
 export default function Home() {
@@ -11,10 +11,10 @@ export default function Home() {
     <div>
         <Header />
         <About />
-        {/* <Services /> */}
-        {/* <TechTools /> */}
-        {/* <Project /> */}
-        {/* <Contact /> */}
+        <Services />
+        <TechTools />
+        <Project />
+        <Contact />
     </div>
     )
 }

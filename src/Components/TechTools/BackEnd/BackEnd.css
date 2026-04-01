@@ -1,0 +1,259 @@
+.backEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    padding: 2rem;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.backEnd-top{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.backEnd-top-text{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.backEnd-top-line{
+    width: 9rem;
+    height: 0.07rem;
+    margin: 1rem auto;
+    background: linear-gradient(to right, #4fd1ff, transparent);
+}
+
+.backEnd-description{
+    /* align-items: flex-start; */
+    display: flex;
+    color: #8c96a1;
+    width: 60%;
+    /* margin-left: -1.2rem; */
+}
+
+
+.backEnd-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.backEnd-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 7rem ;
+    height: 7rem;
+    background-color: #0b0d17;
+    color: white;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    transition: tranform 0.3s ease;
+}
+
+.backEnd-card:hover{
+    transition: 0.3s;
+    box-shadow: 2px 2px 30px 0.5px rgba(8, 51, 194, 0.4);
+    background-color: rgb(22, 22, 31);
+    transform: scale(1.1);
+    transform: translateXY(1px);
+}
+
+.backEnd-image img{
+    position: relative;
+    /* background: #2629ce; */
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.backEnd-card:hover .frontEnd-image{
+    transition: 0.3s;
+    transform: scale(1.1);
+    transform: translateXY(1px);
+}
+
+.backEnd-card:hover img{
+    transition: 0.3s;
+    transform: scale(1.1);
+    transform: translateXY(0.5rem);
+    /* transform: rotate(3deg);  */
+}
+
+.backEnd-title{
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 0.7rem;
+}
+
+
+
+
+/* ===================== DESKTOPS (1281px and above) ===================== */
+@media (min-width: 1281px) {
+
+  .backEnd{
+    width: 80%;
+  }
+
+  .backEnd-cards{
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+  }
+
+}
+
+
+/* ===================== LAPTOPS (1025px - 1280px) ===================== */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .backEnd{
+    width: 90%;
+  }
+
+  .backEnd-cards{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .backEnd-card{
+    width: 100%;
+  }
+
+}
+
+
+/* ===================== TABLETS PORTRAIT (768px - 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .backEnd{
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .backEnd-top-text{
+    font-size: 2rem;
+  }
+
+  .backEnd-description{
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .backEnd-cards{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .backEnd-card{
+    width: 100%;
+    height: 6.5rem;
+  }
+
+}
+
+
+/* ===================== TABLETS LANDSCAPE (768px - 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .backEnd-cards{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+
+/* ===================== MOBILE LANDSCAPE (481px - 767px) ===================== */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .backEnd{
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .backEnd-top{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .backEnd-top-text{
+    font-size: 1.6rem;
+  }
+
+  .backEnd-top-line{
+    display: none;
+  }
+
+  .backEnd-description{
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .backEnd-cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .backEnd-card{
+    width: 100%;
+    height: 6rem;
+  }
+
+}
+
+
+/* ===================== MOBILE PORTRAIT (320px - 480px) ===================== */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .backEnd{
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .backEnd-top-text{
+    font-size: 1.3rem;
+  }
+
+  .backEnd-top-line{
+    display: none;
+  }
+
+  .backEnd-description{
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .backEnd-cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .backEnd-card{
+    width: 100%;
+    height: 5.5rem;
+  }
+
+  .backEnd-title{
+    font-size: 0.65rem;
+  }
+
+}
+
+
+
+
+

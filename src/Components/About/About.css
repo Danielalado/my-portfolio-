@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     padding: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     gap: 3rem;
     /* flex-wrap: wrap; */
 }
@@ -153,6 +153,7 @@
     flex-direction: column;
     padding: 1rem;
     gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 .left-col{

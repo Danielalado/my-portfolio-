@@ -1,0 +1,257 @@
+.Design{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    padding: 2rem;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.Design-top{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.Design-top-text{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.Design-top-line{
+    width: 9rem;
+    height: 0.07rem;
+    margin: 1rem auto;
+    background: linear-gradient(to right, #4fd1ff, transparent);
+}
+
+.Design-description{
+    /* align-items: flex-start; */
+    display: flex;
+    color: #8c96a1;
+    width: 60%;
+    /* margin-left: -1.2rem; */
+}
+
+
+
+
+
+
+.Design-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.Design-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 8rem ;
+    height: 8rem;
+    background-color: #0b0d17;
+    color: white;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    transition: tranform 0.3s ease;
+}
+
+.Design-card:hover{
+    transition: 0.3s;
+    box-shadow: 2px 2px 30px 0.5px rgba(8, 51, 194, 0.4);
+    background-color: rgb(22, 22, 31);
+    transform: scale(1.1);
+    transform: translateXY(1px);
+}
+
+.Design-image img{
+    position: relative;
+    /* background: #2629ce; */
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.Design-card:hover .frontEnd-image{
+    transition: 0.3s;
+    transform: scale(1.1);
+    transform: translateXY(1px);
+}
+
+.Design-card:hover img{
+    transition: 0.3s;
+    transform: scale(1.1);
+    transform: translateXY(0.5rem);
+    /* transform: rotate(3deg);  */
+}
+
+.Design-title{
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 0.7rem;
+}
+
+
+
+
+
+/* ===================== DESKTOPS (1281px and above) ===================== */
+@media (min-width: 1281px) {
+
+  .Design{
+    width: 80%;
+  }
+
+  .Design-cards{
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+  }
+
+}
+
+
+/* ===================== LAPTOPS (1025px - 1280px) ===================== */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .Design{
+    width: 90%;
+  }
+
+  .Design-cards{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .Design-card{
+    width: 100%;
+  }
+
+}
+
+
+/* ===================== TABLETS PORTRAIT (768px - 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .Design{
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .Design-top-text{
+    font-size: 2rem;
+  }
+
+  .Design-description{
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .Design-cards{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .Design-card{
+    width: 100%;
+    height: 6.5rem;
+  }
+
+}
+
+
+/* ===================== TABLETS LANDSCAPE (768px - 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .Design-cards{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+
+/* ===================== MOBILE LANDSCAPE (481px - 767px) ===================== */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .Design{
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .Design-top{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .Design-top-text{
+    font-size: 1.6rem;
+  }
+
+  .Design-top-line{
+    display: none;
+  }
+
+  .Design-description{
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .Design-cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+
+}
+
+
+/* ===================== MOBILE PORTRAIT (320px - 480px) ===================== */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .Design{
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .Design-top-text{
+    font-size: 1.3rem;
+  }
+
+  .Design-top-line{
+    display: none;
+  }
+
+  .Design-description{
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .Design-cards{
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+  }
+
+  .Design-card{
+    margin-right: 0.2rem;
+  }
+
+  .Design-title{
+    font-size: 0.65rem;
+  }
+
+}
