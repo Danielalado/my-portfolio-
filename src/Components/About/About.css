@@ -1,0 +1,303 @@
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    /* margin-bottom: 3rem; */
+    gap: 5rem;
+      /* margin: 5rem 20rem; */
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    gap: 3rem;
+    /* flex-wrap: wrap; */
+}
+
+.left-col{
+    width: 30rem;
+    /* height: 30rem; */
+    text-align: start;
+    /* align-items: flex-start; */
+}
+
+.about-me{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem 1rem;
+    background-color: #18181f;
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    color: #8c96a1;
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+
+.about-me-h1{
+    font-size: 4rem;
+    color: white;
+    line-height: 1.1;
+}
+
+.about-me-h1-bottom{
+    margin-top: -0.3rem;
+    /* margin-bottom: 1rem; */
+    font-size: 4rem;
+    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-me-h2{
+    color: #8A58FF;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.location{
+    color: #8c96a1;
+}
+
+.about-description{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    line-height: 1.6;
+}
+
+.more-about-description{
+    margin-bottom: 1rem;
+    color: #8c96a1;
+    line-height: 1.6;
+}
+
+.about-my-works{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+
+.project{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: white;
+    padding: 0.8rem 1.3rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(to right, #0d98e9,#00e1ff);
+    transition: 0.3s ease;
+}
+
+.project img{
+    width: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.project:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(53, 135, 202, 0.9);
+    transform: scale(1.05);
+}
+
+.project:hover img{
+    transform: translateX(0.3rem);
+}
+
+.portfolio{
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.7rem;
+    color: #8c96a1;
+    border: 0.1rem solid rgb(80, 79, 79);
+    transition: 0.3s ease;
+}
+
+.portfolio:hover{
+    cursor: pointer;
+    background-color: #252627;
+}
+
+/* Image */
+
+.right-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 40rem;
+    border: 0.1rem solid rgb(80, 79, 79);
+    border-radius: 1rem;
+    background: url(../../assets/AboutImages/alado.jpg);
+    background-size: cover;
+    /* backgrou6nd-position: center; */
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+/* Smartphones (320px – 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+
+#about{
+    padding: 2rem 1rem;
+}
+
+.about{
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.left-col{
+    width: 100%;
+    text-align: center;
+}
+
+.about-me-h1{
+    font-size: 2rem;
+}
+
+.about-me-h1-bottom{
+    font-size: 2rem;
+    /* margin-bottom: 2rem; */
+}
+
+.about-me-h2{
+    font-size: 1.5rem;
+    /* margin-bottom: ; */
+}
+
+.about-description,
+.more-about-description{
+    text-align: center;
+    /* margin-bottom: -2rem; */
+}
+
+.about-my-works{
+    justify-content: center;
+}
+
+.right-col{
+    width: 20rem;
+    height: 20rem;
+}
+
+}
+
+
+/* Low Resolution Tablets / Large Phones (481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+
+#about{
+    padding: 2rem 2rem;
+}
+
+.about{
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.left-col{
+    width: 100%;
+}
+
+.about-me-h1{
+    font-size: 2.5rem;
+}
+
+.about-me-h1-bottom{
+    font-size: 2.5rem;
+}
+
+.about-me-h2{
+    font-size: 1.8rem;
+}
+
+.right-col{
+    width: 24rem;
+    height: 24rem;
+}
+
+}
+
+
+/* Tablets Portrait (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+#about{
+    padding: 2rem 3rem;
+}
+
+.about{
+    gap: 2rem;
+}
+
+.left-col{
+    width: 50%;
+}
+
+.about-me-h1{
+    font-size: 3rem;
+}
+
+.about-me-h1-bottom{
+    font-size: 3rem;
+}
+
+.about-me-h2{
+    font-size: 2rem;
+}
+
+.right-col{
+    width: 28rem;
+    height: 28rem;
+}
+
+}
+
+
+/* Tablets Landscape (768px – 1024px landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+.right-col{
+    width: 32rem;
+    height: 32rem;
+}
+
+}
+
+
+/* Laptops / Desktops (1025px – 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+#about{
+    padding: 2rem 4rem;
+}
+
+.left-col{
+    width: 28rem;
+}
+
+.right-col{
+    width: 34rem;
+    height: 34rem;
+}
+
+}
+
+
+/* Large Desktops (1281px and above) */
+@media (min-width: 1281px) {
+
+#about{
+    padding: 2rem 5rem;
+}
+
+}
