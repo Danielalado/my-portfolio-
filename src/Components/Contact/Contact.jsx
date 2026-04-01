@@ -1,9 +1,32 @@
 
 import Arrow from "../../assets/HeaderImages/right-arrow.png"
+import emailjs from "emailjs-com";
 import "./Contact.css"
 
 
 export default function Contact() {
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_a215meq" ,
+      "template_6toncxg",
+      e.target,
+      "TPcv2vl9fR6OBv-kz"
+    ).then(
+      () => {
+        alert("Message sent successfully!");
+      },
+      () => {
+        alert("Failed to send message.");
+      }
+    );
+
+    e.target.reset();
+  };
+
+
     return(
         <div className="contacts" id="contacts">
             <div className="contacts-left">
@@ -17,7 +40,7 @@ export default function Contact() {
                 </p>
 
                 <div className="email-contacts">
-                    <img src="#" alt="" />
+                    {/* <img src="#" alt="" /> */}
                     <div className="email-contact">
                         <p>EMAIL</p>
                         <p className="email">aladohdaniel@gmal.com</p>
@@ -26,7 +49,7 @@ export default function Contact() {
             </div>
 
             <div className="contacts-right">
-                <form className="contact">
+                <form className="contact" onSubmit={sendEmail}>
                     <p className="contact-title">What can I help you with?</p>
                     <div className="my-service">
                         <p>WEB DESIGN</p>
@@ -37,22 +60,22 @@ export default function Contact() {
                     <div className="details">
                         <div className="detail">
                             <label htmlFor="first-name">FIRST NAME</label>
-                            <input type="text" name="" placeholder="John" required/>
+                            <input type="text" name="first_name" placeholder="John" required/>
                         </div>
                         <div className="detail">
                             <label htmlFor="second-name">SECOND NAME</label>
-                            <input type="text" name="" placeholder="Doe" required/>
+                            <input type="text" name="second_name" placeholder="Doe" required/>
                         </div>
                     </div>
 
                     <div className="details">
                         <div className="detail">
                             <label htmlFor="phone-number">PHONE NUMBER</label>
-                            <input type="number" name="" placeholder="(+233)12 345 6789" required/>
+                            <input type="number" name="from_number" placeholder="(+233)12 345 6789" required/>
                         </div>
                         <div className="detail">
                             <label htmlFor="email">EMAIL</label>
-                            <input type="email" name="" placeholder="john@example.com" required/>
+                            <input type="email" name="from_email" placeholder="john@example.com" required/>
                         </div>
                     </div>
 

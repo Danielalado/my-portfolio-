@@ -129,7 +129,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  height: 55vh;
+  /* height: 55vh; */
   width: 16rem;
   padding: 1.5rem;
   gap: 1rem;
@@ -269,7 +269,7 @@ hr{
 }
 
 .menu{
-  height: 65vh;
+  /* height: 50vh; */
   margin-top: 4.2rem;
   right: auto;
   width: 90%;
