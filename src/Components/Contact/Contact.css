@@ -120,6 +120,11 @@ form{
     /* width: 9rem; */
 }
 
+.my-service p:hover{
+    color: white;
+    cursor: pointer;
+}
+
 .details{
     display: flex;
     gap: 1.5rem;

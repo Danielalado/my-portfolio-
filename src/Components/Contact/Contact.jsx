@@ -71,11 +71,11 @@ export default function Contact() {
                     <div className="details">
                         <div className="detail">
                             <label htmlFor="phone-number">PHONE NUMBER</label>
-                            <input type="number" name="from_number" placeholder="(+233)12 345 6789" required/>
+                            <input type="number" name="user_number" placeholder="(+233)12 345 6789" required/>
                         </div>
                         <div className="detail">
                             <label htmlFor="email">EMAIL</label>
-                            <input type="email" name="from_email" placeholder="john@example.com" required/>
+                            <input type="email" name="user_email" placeholder="john@example.com" required/>
                         </div>
                     </div>
 
