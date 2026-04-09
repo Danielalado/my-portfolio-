@@ -9,7 +9,7 @@ export default function Header () {
             <h1 className="header-top-h1">Creative</h1>
             <h1 className="header-top-h1-bottom">Web Developer</h1>
             <p className="description">
-                I'm a Ghanaian-based web designer and frontend developer specializing in React and JavaScript. I design and build high-converting websites and product UIs that feel premium and ship fast.
+                I'm a Ghanaian-based frontend developer and a graphic designer specializing in React and JavaScript. I design and build high-converting websites and product UI's that feel premium and ship fast.
             </p>
 
             <div className="my-works">

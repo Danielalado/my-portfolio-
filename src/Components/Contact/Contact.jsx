@@ -52,7 +52,7 @@ export default function Contact() {
                 <form className="contact" onSubmit={sendEmail}>
                     <p className="contact-title">What can I help you with?</p>
                     <div className="my-service">
-                        <p>WEB DESIGN</p>
+                        {/* <p>WEB DESIGN</p> */}
                         <p>WEB DEVELOPMENT</p>
                         <p>GRAPHIC DESIGN</p>
                         <p>OTHER</p>

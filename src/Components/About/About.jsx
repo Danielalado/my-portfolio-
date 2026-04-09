@@ -20,7 +20,7 @@ export default function About () {
                     <h2 className="about-me-h2">Frontend Developer</h2>
                     <p className="location">Based in Ghana,Volta Region</p>
                     <p className="about-description">
-                        Design is where I started (graphic design), so I don't just “make websites” — I work in React, JavaScript, and Vanilla Css to ship fast, responsive sites with performance and UX baked in. Everything is intentional: it should look right, feel smooth, and communicate the brand clearly.
+                        Design is where I started (graphic design), so I don't just “make websites”, I work in React, JavaScript, and Vanilla Css to ship fast, responsive sites with performance and UX baked in. Everything is intentional, it should look right, feel smooth, and communicate the brand clearly.
                     </p>
                     <p className="more-about-description">
                         // If you want a site that converts and doesn't crumble the second you need updates, that's my lane.

@@ -39,7 +39,7 @@ export default function Project() {
                     <div className="project-right-bottom">
                         <div className="left">
                             <p className="left-top">FRONTEND DEVELOPMENT</p>
-                            <p className="left-bottom">WEB DESIGN</p>
+                            {/* <p className="left-bottom">WEB DESIGN</p> */}
                         </div>
                         <div className="right">
                             <a href="https://foodapp-eosin-ten.vercel.app/" target="_blank">
@@ -76,7 +76,7 @@ export default function Project() {
                     <div className="project-right-bottom">
                         <div className="left">
                             <p className="left-top">FRONTEND DEVELOPMENT</p>
-                            <p className="left-bottom">WEB DESIGN</p>
+                            {/* <p className="left-bottom">WEB DESIGN</p> */}
                         </div>
                         <div className="right">
                             <a href="https://danielalado.github.io/coffe-shop/" target="_blank">
@@ -113,7 +113,7 @@ export default function Project() {
                     <div className="project-right-bottom">
                         <div className="left">
                             <p className="left-top">FRONTEND DEVELOPMENT</p>
-                            <p className="left-bottom">WEB DESIGN</p>
+                            {/* <p className="left-bottom">WEB DESIGN</p> */}
                         </div>
                         <div className="right">
                             <a href="https://danielalado.github.io/SupremEBook/" target="_blank">
@@ -150,7 +150,7 @@ export default function Project() {
                     <div className="project-right-bottom">
                         <div className="left">
                             <p className="left-top">FRONTEND DEVELOPMENT</p>
-                            <p className="left-bottom">WEB DESIGN</p>
+                            {/* <p className="left-bottom">WEB DESIGN</p> */}
                         </div>
                         <div className="right">
                             <a href="https://danielalado.github.io/DevJourney/" target="_blank">

@@ -23,7 +23,7 @@ export default function Services() {
                         </p>
                         <p className="card-description">
 
-                            I build fast, scalable frontends using React and Next.js with performance, accessibility, and UX baked in. Clean architecture, maintainable code, and interfaces that feel intentional—not slapped together.
+                            I build fast, scalable frontends using React and JavaScript with performance, accessibility, and UX baked in. Clean architecture, maintainable code, and interfaces that feel intentional, not slapped together.
                         </p>
                         <div className="card-bottom-line"></div>
                     </div>
