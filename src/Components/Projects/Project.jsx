@@ -26,7 +26,7 @@ export default function Project() {
                     <div className="project-right-top">
                         <p className="date">
                             <img src={Date} alt="" />
-                            <p>2025</p>
+                            <p>2026</p>
                         </p>
                         <p className="number">1</p>
                     </div>
@@ -53,44 +53,6 @@ export default function Project() {
 
             </div>
 
-
-            <div className="project-cards">
-                <div className="project-left">
-                    <img src={Coffee} alt="" />
-                </div>
-
-                <div className="project-right">
-                    <div className="project-right-top">
-                        <p className="date">
-                            <img src={Date} alt="" />
-                            <p>2025</p>
-                        </p>
-                        <p className="number">2</p>
-                    </div>
-
-                    <h2 className="project-name">Coffee Shop</h2>
-                    <p className="project-name-description">Finally all your Coffee needs are solved with one shop</p>
-                    <p className="project-name-about">Coffee Shop is an innovative shop that helps solve all your coffee needs in one app with just a click that connect you to the best coffee vendour near you</p>
-                    <hr className="project-hr" />
-
-                    <div className="project-right-bottom">
-                        <div className="left">
-                            <p className="left-top">FRONTEND DEVELOPMENT</p>
-                            {/* <p className="left-bottom">WEB DESIGN</p> */}
-                        </div>
-                        <div className="right">
-                            <a href="https://danielalado.github.io/coffe-shop/" target="_blank">
-                            <p>EXPLORE</p>
-                            </a>
-                            <img src={Arrow} alt="" />
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
             <div className="project-cards">
                 <div className="project-left">
                     <img src={EBooks} alt="" />
@@ -100,9 +62,9 @@ export default function Project() {
                     <div className="project-right-top">
                         <p className="date">
                             <img src={Date} alt="" />
-                            <p>2025</p>
+                            <p>2026</p>
                         </p>
-                        <p className="number">3</p>
+                        <p className="number">2</p>
                     </div>
 
                     <h2 className="project-name">EBooks App</h2>
@@ -127,6 +89,41 @@ export default function Project() {
 
             </div>
 
+            <div className="project-cards">
+                <div className="project-left">
+                    <img src={Coffee} alt="" />
+                </div>
+
+                <div className="project-right">
+                    <div className="project-right-top">
+                        <p className="date">
+                            <img src={Date} alt="" />
+                            <p>2025</p>
+                        </p>
+                        <p className="number">3</p>
+                    </div>
+
+                    <h2 className="project-name">Coffee Shop</h2>
+                    <p className="project-name-description">Finally all your Coffee needs are solved with one shop</p>
+                    <p className="project-name-about">Coffee Shop is an innovative shop that helps solve all your coffee needs in one app with just a click that connect you to the best coffee vendour near you</p>
+                    <hr className="project-hr" />
+
+                    <div className="project-right-bottom">
+                        <div className="left">
+                            <p className="left-top">FRONTEND DEVELOPMENT</p>
+                            {/* <p className="left-bottom">WEB DESIGN</p> */}
+                        </div>
+                        <div className="right">
+                            <a href="https://danielalado.github.io/coffe-shop/" target="_blank">
+                            <p>EXPLORE</p>
+                            </a>
+                            <img src={Arrow} alt="" />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
             <div className="project-cards">
                 <div className="project-left">
