@@ -8,7 +8,7 @@
   padding: 0.9rem 2rem;
   border-radius: 5rem;
   width: 85%;
-  border: 1px solid rgb(80, 79, 79);
+  border: var(--border);
   position: fixed;
   top: 0;
   left: 0;
@@ -23,16 +23,16 @@
 }
 
 .navbar-name h4{
-  color: white;
+  color: var(--secondary-text-color)
 }
 
 .navbar-name p{
-  color: #8c96a1;
+  color: var(--primary-text-color);
   font-size: 0.65rem;
 }
 
 .navbar-logo{
-    color: white;
+    color: var(--secondary-text-color);
     padding: 0.2rem;
     margin-right: 1rem;
     border-radius: 0.5rem;
@@ -49,7 +49,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, #0d98e9,#00e1ff);
+  background: var(--text-div-background-right);
   border-radius: 0.8rem;
   padding: 0.2rem;
   transform: rotate(45deg); 
@@ -63,7 +63,7 @@
 
 
 .navbar-btns a{
-  color: #8c96a1;
+  color: var(--primary-text-color);
   margin-left: 2rem;
   font-size: 0.8rem;
 }
@@ -88,18 +88,18 @@
 .navbar-right a{
   display: flex;
   justify-content: center;
-  background: rgb(32, 31, 31);
   color: white;
   padding: 0.5rem;
   border-radius: 1rem;
   width: 7rem;
   font-size: 0.8rem;
+  background-color: var( --text-div-background-main-color);
 }
 
 .navbar-right a:hover{
   cursor: pointer;
   background: linear-gradient(to right, #0d98e9,#00e1ff);
-  transition: 0.9s;
+  transition: 0.5s;
 
 }
 /* humberger starts here  */
@@ -120,8 +120,7 @@
 .burger-bar{
     width: 1.5rem;
     height: 0.2rem;
-    background: linear-gradient(to right, #0d98e9,#00e1ff);
-    /* background-color: white; */
+    background: var(--text-div-background-right);
     border-radius: 0.3rem;
 }
 
@@ -137,7 +136,7 @@
   z-index: 999;
   border-radius: 1rem;
   border: 0.2rem solid rgb(80, 79, 79);
-  background-color: #060607;
+  background-color: #0b0d17;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -193,7 +192,7 @@
 }
 
 .sidebar-btns a{
-  color: #8c96a1;
+  color: var(--primary-text-color);
 }
 
 .sidebar-hr{
@@ -214,9 +213,9 @@
   padding: 0.7rem;
   /* margin-top: 5rem; */
   border: none;
-  color: white;
+  color:  var(--secondary-text-color);
   border-radius: 0.5rem;
-  background: linear-gradient(to right, #0d98e9,#00e1ff);
+  background: var(--text-div-background-right);
 }
 .menu button:hover{
   cursor: pointer;

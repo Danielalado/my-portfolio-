@@ -14,20 +14,20 @@
     gap: 0.5rem;
     margin: 2rem auto;
     padding: 0.5rem 0.7rem;
-    color: #8c96a1;
+    color: var(--primary-text-color);
     border-radius: 1rem;
     font-size: 0.6rem;
-    border: 0.1rem solid rgb(80, 79, 79);
-    background-color: #18181f;
+    border: var(--border);
+    background-color: var(--text-div-background-main-color);
 }
 
 .slash{
-    color: #0d98e9;
+    color: #00e1ff;
 }
 
 .header-top-h1{
    font-size: 5rem;
-   color: white;
+   color: var(--secondary-text-color);
    line-height: 1.1;
 }
 
@@ -35,13 +35,13 @@
     margin-top: -1.2rem;
     margin-bottom: 2rem;
     font-size:5rem;
-    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    background: var(--tertiary-text-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .description{
-    color: #8c96a1;
+    color: var(--primary-text-color);
     margin: 0 auto 2rem auto;
     width: 50%;
     line-height: 1.6;
@@ -61,10 +61,10 @@
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--secondary-text-color);
     padding: 0.8rem 1.3rem;
     border-radius: 0.7rem;
-    background: linear-gradient(to right, #0d98e9,#00e1ff);
+    background: var(--text-div-background-right);
     transition: 0.3s ease;
 }
 
@@ -86,15 +86,16 @@
 .portfolio{
     padding: 0.8rem 1.5rem;
     border-radius: 0.7rem;
-    color: #8c96a1;
-    border: 0.1rem solid rgb(80, 79, 79);
+    color: var(--primary-text-color);
+    background-color: var(--text-div-background-main-color);
+    border: var(--border);
     transition: 0.3s ease;
     justify-content: center;
 }
 
 .portfolio:hover{
     cursor: pointer;
-    background-color: #252627;
+    background-color: var(--text-div-background-h0ver-color);
 }
 
 .header-bottom-line{

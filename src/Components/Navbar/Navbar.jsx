@@ -7,7 +7,6 @@ import { useState } from "react"
 import "./Navbar.css"
 
 export default function Navbar() {
-
     // to change burger classes
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
     const [menu_class, setMenuClass] = useState("menu hidden")
@@ -32,8 +31,6 @@ export default function Navbar() {
     setMenuClass("menu hidden")
     setMenuClicked(false)
 }
-
-    
 
     return(
     <div className="navbar">
@@ -60,10 +57,7 @@ export default function Navbar() {
                 <a href="#contacts" className="button" onClick={closeMenu}>HIRE ME</a>
             </div>
         {/* </div> */}
-
-        {/* humberger ends here  */}
-
-
+{/* humberger ends here */}
 
         <Link to="/" className="navbar-left">
             <h2 className="navbar-logo">DA</h2>

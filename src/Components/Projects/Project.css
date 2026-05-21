@@ -11,7 +11,7 @@
 }
 
 .project-top{
-    color: white;
+    color: var(--secondary-text-color);
     font-size: 4rem;
     line-height: 1.1;
 }
@@ -19,13 +19,13 @@
 .project-bottom{
     margin-top: -0.5rem;
     font-size: 3.5rem;
-    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    background: var(--tertiary-text-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .project-description{
-    color: #8c96a1;
+    color: var(--primary-text-color);
     margin-top: 1rem;
     width: 60%;
 }
@@ -38,14 +38,15 @@
     width: 80%;
     height: 50%;
     border-radius: 1rem;
-    border: 0.1rem solid rgb(80, 79, 79);
-    /* background-color: #1a1919; */
+    border: var(--border);
+    background-color: var(--text-div-background-main-color);
 }
 
 .project-cards:hover{
     cursor: pointer;
     box-shadow: 2px 2px 30px 0.5px rgba(8, 51, 194, 0.4);
     border-color: #0d98e9;
+    background-color: var(--text-div-background-hover-color);
 }
 
 .project-left{
@@ -87,7 +88,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-    color: #8c96a1;
+    color: var(--primary-text-color);
 }
 
 .project-right-top .date{
@@ -96,9 +97,9 @@
     height: 2rem;
     gap: 0.5rem;
     padding: 0.3rem;
-    border: 0.1rem solid rgb(80, 79, 79);
+    border: var(--border);
     border-radius: 0.5rem;
-    background-color: rgb(22, 22, 31);
+    background-color: var(--text-div-background-main-color);
 
 }
 
@@ -118,9 +119,9 @@
     height: 2rem;
     width: 2rem;
     padding: 0.5rem;
-    border: 0.1rem solid rgb(80, 79, 79);
+    border: var(--border);
     border-radius: 10rem;
-    background-color: rgb(22, 22, 31);
+    background-color: var(--text-div-background-main-color);
 }
 
 .project-cards:hover .number{
@@ -130,24 +131,24 @@
 
 
 .project-name{
-    color: white;
+    color: var(--secondary-text-color);
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
 .project-cards:hover .project-name{
-    background: linear-gradient(to right, #38a8e9,#99eaf5);
+    background: var(--text-div-background-right);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .project-name-description{
-    color: #d4d6d8;
+    color: var(--secondary-text-color);
     margin-bottom: 1.5rem;
 }
 
 .project-name-about{
-    color: #8c96a1;
+    color: var(--primary-text-color);
     margin-bottom: 1.5rem;
 }
 
@@ -165,10 +166,10 @@
 .project-right-bottom .left-top{
     margin-bottom: 1rem;
     padding: 0.3rem;
-    border: 0.1rem solid rgb(80, 79, 79);
+    border: var(--border);
     border-radius: 0.5rem;
-    background-color: #16161f;
-    color: #8c96a1;
+    background-color: var(--text-div-background-main-color);
+    color: var(--primary-text-color);
     font-size: 0.9rem;
 }
 
@@ -176,10 +177,10 @@
     width: 7rem;
     margin-bottom: 1rem;
     padding: 0.3rem;
-    border: 0.1rem solid rgb(80, 79, 79);
+    border: var(--border);
     border-radius: 0.5rem;
-    background-color: #16161f;
-    color: #8c96a1;
+    background-color: var(--text-div-background-main-color);
+    color: var(--primary-text-color);
     font-size: 0.9rem;
 }
 
@@ -190,16 +191,16 @@
     gap: 0.5rem;
     width: 7rem;
     padding: 0.5rem 0.7rem;
-    border: 0.1rem solid rgb(80, 79, 79);
+    border: var(--border);
     border-radius: 0.5rem;
-    background: linear-gradient(to right, #0d98e9,#00e1ff);
-    color: white;
+    background: var(--text-div-background-right);
+    color: var(--secondary-text-color);
     font-size: 0.9rem;
     border: none;
 }
 
 .project-right-bottom .right a{
-    color: white;
+    color: var(--secondary-text-color);
 }
 
 .project-right-bottom .right img{
@@ -218,10 +219,10 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 0.7rem;
-    border: 0.1rem solid rgb(80, 79, 79);
+    border: var(--border);
     border-radius: 0.5rem;
-    background: linear-gradient(to right, #0d98e9,#00e1ff);
-    color: white;
+    background: var(--text-div-background-right);
+    color: var(--secondary-text-color);
     font-size: 0.9rem;
     border: none;
 }

@@ -17,7 +17,7 @@ export default function Project() {
                 Success stories from clients who trusted my expertise to bring their vision to life.
             </p>
 
-            <div className="project-cards">
+            <div className="project-cards">6  
                 <div className="project-left">
                     <img src={FoodApp} alt="" />
                 </div>
@@ -89,7 +89,7 @@ export default function Project() {
 
             </div>
 
-            <div className="project-cards">
+            <div className="project-cards"> 
                 <div className="project-left">
                     <img src={Coffee} alt="" />
                 </div>

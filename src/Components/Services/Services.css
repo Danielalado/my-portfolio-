@@ -15,33 +15,33 @@
     gap: 1rem;
     margin: 1rem auto;
     padding: 0.5rem 1rem;
-    color: #8c96a1;
+    color: var(--primary-text-color);
     border-radius: 1rem;
     font-size: 0.6rem;
-    border: 0.1rem solid rgb(80, 79, 79);
-    background-color: #18181f;
+    border: var(--border);
+    background-color: var(--text-div-background-main-color);
 }
 
 .services-top-slash{
-    color: #0d98e9;
+    color: #00e1ff;
 }
 
 .services-top-h1{
     font-size: 4rem;
-    color: white;
+    color: var(--secondary-text-color);
     line-height: 1.1;
 }
 
 .services-top-bottom{
     margin-top: -0.3rem;
     font-size: 3.5rem;
-    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    background: var(--tertiary-text-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .services-bottom-description{
-    color: #8c96a1;
+    color: var(--primary-text-color);
     margin-bottom: 2rem;
 }
 
@@ -58,26 +58,25 @@
     flex-direction: column;
     width: 20rem ;
     height: 20rem;
-    background-color: #0b0d17;
-    color: white;
+    background-color: var(--text-div-background-main-color);
+    color: var(--secondary-text-color);
     margin: 0.5rem;
     margin-top: 3rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    border: 0.1rem solid rgb(80, 79, 79);
+    border: var(--border);
     transition: tranform 0.3s ease;
 }
 
 .card:hover{
     transition: 0.3s;
     box-shadow: 2px 2px 30px 0.5px rgba(8, 51, 194, 0.4);
-    background-color: rgb(22, 22, 31);
+    background-color: var(--text-div-background-hover-color);
 }
 
 .card-image img{
     position: relative;
-    background: linear-gradient(to bottom, #0d98e9,#00e1ff);
-    /* background: #2629ce; */
+    background: var(--text-div-background-bottom);
     width: 4rem;
     height: 4rem;
     padding: 1rem;
@@ -102,12 +101,12 @@
 
 .card-title{
     margin: 0.5rem;
-    color: white;
+    color: var(--secondary-text-color);
 }
 
 .card-description{
     margin-top: 1rem;
-    color: #8c96a1;
+    color: var(--primary-text-color);
 }
 
 .card-bottom-line{

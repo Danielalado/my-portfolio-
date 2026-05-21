@@ -16,7 +16,7 @@
 }
 
 .backEnd-top-text{
-    color: white;
+    color: var(--secondary-text-color);
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
@@ -31,7 +31,7 @@
 .backEnd-description{
     /* align-items: flex-start; */
     display: flex;
-    color: #8c96a1;
+    color: var(--primary-text-color);
     width: 60%;
     /* margin-left: -1.2rem; */
 }
@@ -50,21 +50,21 @@
     text-align: center;
     width: 7rem ;
     height: 7rem;
-    background-color: #0b0d17;
-    color: white;
+    background-color: var(--text-div-background-main-color);
+    color: var(--secondary-text-color);
     margin-right: 1rem;
     margin-top: 1.5rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    border: 0.1rem solid rgb(80, 79, 79);
+    border: var(--border);
     transition: tranform 0.3s ease;
 }
 
 .backEnd-card:hover{
     transition: 0.3s;
     box-shadow: 2px 2px 30px 0.5px rgba(8, 51, 194, 0.4);
-    background-color: rgb(22, 22, 31);
-    transform: scale(1.1);
+    background-color: var(--text-div-background-hover-color);
+    transform: scale(1.05);
     transform: translateXY(1px);
 }
 
@@ -82,20 +82,20 @@
 
 .backEnd-card:hover .frontEnd-image{
     transition: 0.3s;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transform: translateXY(1px);
 }
 
 .backEnd-card:hover img{
     transition: 0.3s;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transform: translateXY(0.5rem);
     /* transform: rotate(3deg);  */
 }
 
 .backEnd-title{
     margin-bottom: 0.5rem;
-    color: white;
+    color: var(--secondary-text-color);
     font-size: 0.7rem;
 }
 

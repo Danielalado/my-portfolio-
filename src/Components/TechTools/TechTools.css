@@ -10,21 +10,21 @@
 
 .TechTools-top-h1{
     font-size: 4rem;
-    color: white;
+    color: var(--secondary-text-color);
     line-height: 1.1;
 }
 
 .TechTools-top-bottom{
     margin-top: -0.3rem;
     font-size: 3.5rem;
-    background: linear-gradient(to bottom, #ffffff,#8b8d8f);
+    background: var(--tertiary-text-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 
 .TechTools-bottom-description{
-    color: #8c96a1;
+    color: var(--primary-text-color);
     margin-bottom: 2rem;
     width: 50%;
 }
